@@ -1,0 +1,36 @@
+ 
+git clone https://github.com/wakeupflower/shopping
+git init
+git branch --set-upstream-to=<remote>/<branch> master
+
+
+git remote add origin https://github.com/wakeupflower/shopping
+git remote -v
+git push -u origin branch1
+
+
+git clean -fd  
+
+delete a file : 
+git rm = git add -u
+git restore --source=HEAD to_do.txt
+git checkout HEAD -- filename.txt
+git reflog   # Shows a log of your recent HEAD changes
+git log --oneline  
+
+git diff --color
+git diff --stat
+git diff --staged
+git diff commit1 commit2 -- myfile.js
+git diff --name-only
+git diff --word-diff
+git diff --ignore-space-change
+
+grep "pattern" file1.txt file2.txt
+grep -r "pattern" /path/to/directory
+git log -S"pattern" --source --all
+
+You can search for a pattern between two specific commits:
+git grep "pattern" <commit1>..<commit2>
+
+git cherry-pick --abort
